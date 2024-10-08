@@ -1,0 +1,114 @@
+.register-page-wrap{
+	position: relative;
+	height: calc(100% - 70px);
+	overflow: auto;
+	padding: 30px 0;
+}
+.register-page-wrap .register-box{
+	max-width: 410px;
+	margin: 0 auto;
+}
+.register-page-wrap .wizard-content .wizard{
+	position: relative;
+	overflow: auto;
+}
+.register-page-wrap .wizard-content .wizard .steps{
+	position: relative;
+}
+.register-page-wrap .wizard-content .wizard > .steps .step{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-left: 0;
+	display: block;
+	margin: 0 auto;
+	border-width: 2px;
+	background-color: #ffffff;
+	border-color: rgba(24, 31, 72, .3);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.register-page-wrap .wizard-content .wizard > .steps > ul > li.done > a .step{
+	background: url(../images/tick.svg) no-repeat #ecf0f4;
+    font-size: 0;
+    background-size: 22px;
+    background-position: center center;
+    border-color: rgba(24, 31, 72, .3);
+}
+.register-page-wrap .wizard-content .wizard.wizard-circle>.steps>ul>li:after,
+.register-page-wrap .wizard-content .wizard.wizard-circle>.steps>ul>li:before{
+	/*display: none;*/
+	background: rgba(24, 31, 72, .3);
+}
+.wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:before,
+.wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:after{
+	background: rgba(24, 31, 72, .3);
+}
+.wizard-content .wizard.vertical.wizard-circle>.steps>ul>li.current~li:before,
+.wizard-content .wizard.vertical.wizard-circle>.steps>ul>li.current~li:after{
+	background-color: transparent;
+}
+.register-page-wrap .wizard-content .wizard > .steps > ul > li.current .step{
+	border-color: #1b00ff;
+	color: #181f48;
+	background-color: #ffffff;
+}
+.register-page-wrap .wizard-content .wizard > .steps .info{
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.register-page-wrap .wizard-content .wizard > .steps > ul{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    padding: 0 10px;
+}
+.register-page-wrap .wizard-content .wizard > .steps > ul > li{
+	width: 25%;
+}
+.register-page-wrap .wizard-content .wizard > .steps > ul > li a{
+	padding: 20px 10px;
+	margin: 0;
+	text-align: center;
+	color: rgba(24, 31, 72, .6);
+	font-size: 11px;
+	font-weight: 700;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.register-page-wrap .wizard-content .wizard > .steps > ul > li.current > a,
+.register-page-wrap .wizard-content .wizard > .steps > ul > li.done > a{
+	color: #181f48;
+}
+.register-page-wrap .wizard-content .wizard > .content{
+	overflow: hidden;
+	padding: 15px 15px 0;
+	min-height: 320px;
+}
+.register-page-wrap .wizard-content .wizard > .actions{
+	padding: 0px 15px 20px;
+	text-align: right;
+}
+.register-info li{
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+/*.register-page-wrap .wizard-content .wizard > .content > .body.current{
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+}*/
+/*==============================================================
+	Register Page End
